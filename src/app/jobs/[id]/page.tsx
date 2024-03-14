@@ -63,7 +63,7 @@ export default function Page({ params }: { params: { id: number } }) {
               <p className="font-bold my-8">Requirement</p>
               <p>{job?.requirements.content}</p>
               <ul className="list-disc list-inside leading-loose">
-                {job?.requirements.items.map((item, index) => (
+                {job?.requirements?.items.map((item, index) => (
                   <li key={index}>
                     <span className="pl-5">{item}</span>
                   </li>
@@ -72,7 +72,7 @@ export default function Page({ params }: { params: { id: number } }) {
               <p className="font-bold my-8">What You Will Do</p>
               <p>{job?.role.content}</p>
               <ul className="list-decimal list-inside leading-loose">
-                {job?.role.items.map((item, index) => (
+                {job?.role?.items.map((item, index) => (
                   <li key={index}>
                     <span className="pl-5">{item}</span>
                   </li>

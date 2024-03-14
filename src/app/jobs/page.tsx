@@ -22,7 +22,7 @@ export default function Page() {
       <div className="my-10" />
       <div className="flex gap-x-4 gap-y-12 flex-wrap">
         {data.map((job) => (
-          <Link href={`/jobs/${job.id}`}>
+          <Link href={`/jobs/${job.id}`} key={job.id}>
             <Card
               key={job.id}
               className="border-none w-[350px] max-w-[350px] min-h-[230px] relative"
