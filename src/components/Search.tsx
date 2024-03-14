@@ -18,7 +18,10 @@ export default function Search() {
                 height={24}
                 alt="search icon"
               />
-              <Input className="pl-10 border-none" />
+              <Input
+                className="pl-10 border-none"
+                placeholder="Search By Title"
+              />
             </div>
           </form>
         </div>
@@ -32,12 +35,15 @@ export default function Search() {
                 height={24}
                 alt="map pin icon"
               />
-              <Input className="pl-10 border-none" />
+              <Input
+                className="pl-10 border-none"
+                placeholder="Search By Location"
+              />
             </div>
           </form>
         </div>
         <div className="flex items-center px-3 space-x-4">
-          <input type="checkbox" className="w-6 h-6" />
+          <input type="checkbox" className="w-6 h-6" name="fullTime" />
           <span className="text-sm font-bold">Full Time Only</span>
           <Button className="px-6 py-4">Search</Button>
         </div>

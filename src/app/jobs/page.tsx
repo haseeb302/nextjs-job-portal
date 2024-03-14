@@ -11,6 +11,7 @@ import Image from "next/image";
 import data from "@/lib/data.json";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import clsx from "clsx";
 
 export default function Page() {
   return (
@@ -26,7 +27,10 @@ export default function Page() {
               key={job.id}
               className="border-none w-[350px] max-w-[350px] min-h-[230px] relative"
             >
-              <div className="absolute -top-6 left-5 my-auto">
+              <div
+                className="absolute -top-8 left-5 rounded-xl h-12 w-12 p-2"
+                style={{ background: `${job.logoBackground}` }}
+              >
                 <Image
                   src={job?.logo}
                   alt={"company-logo"}
@@ -35,7 +39,7 @@ export default function Page() {
                 />
               </div>
               <CardHeader className="mt-5">
-                <CardDescription>
+                <CardDescription className="mt-3">
                   {job?.postedAt} . {job?.contract}
                 </CardDescription>
                 <CardTitle>{job?.position}</CardTitle>

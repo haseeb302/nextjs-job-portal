@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="flex justify-between pt-8 px-40 bg-hero-pattern bg-no-repeat h-[160px]">
       <div className="">
         <Link href={"/jobs"}>
-          <h3 className="text-3xl text-white">devjobs</h3>
+          <h3 className="text-3xl text-white font-extrabold">devjobs</h3>
         </Link>
       </div>
       <div>
